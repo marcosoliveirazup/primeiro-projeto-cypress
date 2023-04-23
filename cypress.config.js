@@ -1,8 +1,8 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
-  projectId: 'qjktq8',
   e2e: {
+    baseUrl: 'https://alura-fotos.herokuapp.com',
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
@@ -16,5 +16,6 @@ module.exports = defineConfig({
       "timestamp": "mmddyyyy_HHMMss"
       }
   },
+  projectId: 'qjktq8'
 });
 
